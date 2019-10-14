@@ -1,0 +1,43 @@
+<cloud-title>Design your pet masterpiece</cloud-title>
+
+<p>
+We provide a variety of pets, of may shapes characteristics and colours, all you need to do is describe them!
+  </p>
+
+<form (ngSubmit)="onSubmit()">
+  <div class="speciesblock" style="text-align: center; width: 100%;">
+    <group-box title="Choose what specie your pet will be">
+      <span *ngFor="let animal of animals">
+        <input type="checkbox" (change)="updateSpecies(animal, $event)" name="species" value="{{animal.id}}"/>{{animal.name}}<br/>
+      </span>
+    </group-box>
+    <group-box title="What is your pet's gender">
+      <span *ngFor="let gender of genders">
+        <input type="checkbox" (change)="updateSpecies(gender, $event)" name="species" value="{{gender.id}}"/>{{gender.name}}<br/>
+      </span>
+    </group-box>
+    <group-box title="Does your pet have any unique features?">
+      <span *ngFor="let detail of details">
+        <input type="checkbox" (change)="updateSpecies(detail, $event)" name="species" value="{{detail.id}}"/>{{detail.name}}<br/>
+      </span>
+    </group-box>
+    <group-box title="What colour is your pet">
+      <span *ngFor="let colour of colours">
+        <input type="checkbox" (change)="updateSpecies(colour, $event)" name="species" value="{{colour.id}}"/>{{colour.name}}<br/>
+      </span>
+    </group-box>
+    <group-box title="Select your pet personality traits">
+      <span *ngFor="let personality of personalitys">
+        <input type="checkbox" (change)="updateSpecies(personality, $event)" name="species" value="{{personality.id}}"/>{{personality.name}}<br/>
+      </span>
+    </group-box>
+    <group-box title="Name your pet">
+      My new pet shall be called<br/>
+      "<input type="text" [(ngModel)]="model.name" name="name" class="nameField"/>"!
+    </group-box>
+  </div>
+
+  <div style="text-align:center; width:100%;">
+    <big-button label="Adopt this pet"></big-button>
+  </div>
+</form>

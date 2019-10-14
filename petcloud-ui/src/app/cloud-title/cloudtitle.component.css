@@ -1,0 +1,15 @@
+div.cloudtitle {
+  height:95px;
+  width: 100%;
+  text-align: right;
+ 
+  background-position: right;
+  margin-bottom: 20px;
+}
+
+div.cloudtitletext {
+  padding-top: 20px;
+  width: 100%;
+  text-align: right;
+  color:#664700;;
+}

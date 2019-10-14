@@ -1,0 +1,28 @@
+div.groupBox {
+  display: inline-block;
+  vertical-align: top;
+  width: 400px;
+  background-image: url('../../assets/petICON.png');
+  background-repeat: no-repeat;
+  background-color: rgba(233, 186, 75, 0.25);
+  margin: 10px;
+  border-radius: 10px;
+  text-align: right;
+  padding: 0 10px 10px 0;
+  height: 100%;
+  color: #664200;
+  border: 1px solid rgb(255, 150, 118);
+}
+
+div.groupBoxTitle {
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid rgb(230, 201, 173);
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+div.groupBoxContent {
+  padding: 20px;
+  text-align: left;
+}
